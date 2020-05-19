@@ -7,6 +7,16 @@
     <link rel="stylesheet" type="text/css" href="/static/content/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="/static/content/site.css" />
     <script src="/static/scripts/modernizr-2.6.2.js"></script>
+
+    <!-- load plotly and jquery (plotly necessary?) -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+
+    <!-- Load React. -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 </head>
 
 <body>
@@ -22,9 +32,10 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('home') }}">Home3</a></li>
                     <li><a href="{{ url_for('about') }}">About</a></li>
                     <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                    <li><a href="{{ url_for('visualise') }}">Visualise</a></li>
                 </ul>
             </div>
         </div>
