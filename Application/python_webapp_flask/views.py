@@ -100,7 +100,7 @@ def visualise():
     columns = S2.columns
 
     # create table
-    #table = create_table(S2, columns)
+    table = create_table(S2, columns)
 
     # create line graph
     x_axis, y_axis, group_axis = 'date', 'close_price', 'symbol'
@@ -109,6 +109,7 @@ def visualise():
     return render_template(
         'visualise.html',
         linechart=linechart,
+        table=table,
         title='Visualise',
         year=datetime.now().year,
         message='Visualize digested data using plotly'
