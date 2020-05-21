@@ -3,11 +3,12 @@ from selenium import webdriver
 import unittest
 import os
 import sys
-import pytest
 import time
 
 class FunctionalTests(unittest.TestCase):
 
+	'''
+	# test on chrome, not currently installed on programming PC
 	def setUp(self):
 		options = webdriver.ChromeOptions()
 		options.add_argument('--no-sandbox')
@@ -30,7 +31,7 @@ class FunctionalTests(unittest.TestCase):
 				if(current_timestamp > end_timestamp):
 					raise
 				time.sleep(5)
-
+	'''
 	def tearDown(self):
 		try:
 			self.driver.quit()
