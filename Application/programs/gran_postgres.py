@@ -42,8 +42,8 @@ from csv import writer
 import yaml # conda install pyyaml
 
 # relative import
-from .robinhoodCSV.Robinhood import Robinhood
-from .robinhoodCSV.login_data import collect_login_data
+from .Robinhood import Robinhood
+from .login_data import collect_login_data
 
 
 def initialize():
